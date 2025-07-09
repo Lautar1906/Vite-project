@@ -1,0 +1,261 @@
+     body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        .main-content {
+            padding-top: 80px; /* Espacio para la barra de navegación fija */
+            text-align: center;
+        }
+
+        .logo {
+            height: 6em;
+            padding: 1.5em;
+            will-change: filter;
+            transition: filter 300ms;
+        }
+        .logo:hover {
+            filter: drop-shadow(0 0 2em #646cffaa);
+        }
+        .logo.react:hover {
+            filter: drop-shadow(0 0 2em #61dafbcc);
+        }
+
+        .card {
+            padding: 2em;
+        }
+
+        .read-the-docs {
+            color: #888;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-family: "Alfa Slab One", serif;
+            text-align: center;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            width: 100vw;
+        }
+
+        h1 small {
+            color: #00b7ff;
+        }
+
+        footer {
+            background-color: #c4f2f4;
+            color: #333;
+            padding: 20px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .footer-categories,
+        .footer-contact {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-categories h3,
+        .footer-contact h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .footer-categories ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .footer-categories li {
+            margin-bottom: 5px;
+        }
+
+        .footer-categories a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-contact p {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            width: 100%;
+        }
+
+        .footer-contact svg {
+            margin: 0 5px;
+        }
+
+        /* Estilos de la Navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            left: 0;
+            right: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: auto;
+            padding: 10px 20px;
+            background: linear-gradient(180deg, rgba(24, 214, 217, 1) 0%, rgba(0, 251, 255, 1) 51%, rgba(245, 245, 245, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#18D6D9", endColorstr="#F5F5F5", GradientType=0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 20px;
+        }
+
+        nav .list {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            flex-grow: 1;
+            justify-content: flex-start;
+        }
+
+        nav .list li {
+            margin-left: 15px;
+        }
+
+        nav .list li:first-child {
+            margin-left: 0;
+        }
+
+        nav .list a {
+            display: block;
+            text-transform: uppercase;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .list a:hover {
+            border-bottom: 4px solid white;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .search-container input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            color: white;
+            margin-right: 10px;
+            width: 120px;
+        }
+
+        .search-container input[type="text"]::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-container button {
+            background: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 8px 10px;
+        }
+
+        .icon-bars {
+            display: none;
+        }
+
+        .icon-bars .line {
+            width: 30px;
+            height: 5px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+            nav .logo {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+
+            nav .list {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            nav .list li {
+                margin-left: 0;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            nav .list a {
+                padding: 10px;
+                border-bottom: 2px solid white;
+            }
+
+            nav .list a:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .search-container {
+                width: 100%;
+                margin-top: 10px;
+                justify-content: center;
+            }
+
+            .search-container input[type="text"] {
+                width: 70%;
+                margin-right: 5px;
+            }
+
+            .icon-bars {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+        }
